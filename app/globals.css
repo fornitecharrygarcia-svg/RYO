@@ -363,18 +363,31 @@
 }
 @media (max-width: 560px) {
   .topbar nav {
-    gap: 10px;
+    gap: 8px;
   }
   .topbar nav .location-nav {
     display: inline-flex;
   }
+  .topbar nav .publish-nav,
+  .topbar nav .nav-cta {
+    display: none;
+  }
   .language-switch {
-    font-size: inherit;
+    gap: 0;
+    padding: 2px;
+  }
+  .language-option {
+    font-size: 0;
+    gap: 0;
+    padding: 6px;
+  }
+  .language-option span {
+    font-size: 15px;
   }
   .publish-modal {
     padding: 25px 18px;
   }
-  .quick-menu { right: 20px; top: 64px; }
+  .quick-menu { right: 16px; top: 62px; width: min(220px, calc(100vw - 32px)); }
   .ai-panel { bottom: 12px; right: 16px; }
   .ai-options { grid-template-columns: 1fr; }
   .driver-docs {
@@ -427,6 +440,12 @@ body {
   background: #fff;
   color: var(--foreground);
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+img,
+iframe {
+  max-width: 100%;
 }
 a {
   color: inherit;

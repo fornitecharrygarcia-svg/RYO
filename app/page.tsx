@@ -405,6 +405,8 @@ export default function Page() {
           </button>
         </nav>
         {menuOpen && <div className="quick-menu">
+          <a href="#maquinaria" onClick={() => setMenuOpen(false)}><Gauge size={17} /> {language === "es" ? "Maquinaria" : "Machinery"}</a>
+          <button onClick={() => { setPublishOpen(true); setMenuOpen(false) }}><Upload size={17} /> {t.publish}</button>
           <button onClick={() => { setAiOpen(true); setMenuOpen(false) }}><Bot size={17} /> {t.ai}</button>
           <a href="#ubicacion" onClick={() => setMenuOpen(false)}><MapPin size={17} /> {language === "es" ? "Ver mapa" : "View map"}</a>
         </div>}
