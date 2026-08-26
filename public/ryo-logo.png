@@ -1,0 +1,75 @@
+Crea una página web moderna y minimalista para **RYO**, empresa de alquiler de maquinaria pesada. Usa el **logo adjunto** como identidad principal.
+
+### Diseño
+
+* Fondo blanco.
+* Texto negro/gris oscuro.
+* Amarillo del logo únicamente como acento suave.
+* Diseño limpio, profesional y responsive.
+* No abusar del amarillo.
+
+### Maquinaria
+
+Crear catálogo con tarjetas para:
+
+* Volquetas
+* Excavadoras
+* Bobcats
+* Bulldozers
+* Tractores
+
+Cada tarjeta debe mostrar imagen, nombre, descripción, **precio por hora en COP**, disponibilidad y botón **"Alquilar"**.
+
+Agregar filtros por:
+
+* Categoría.
+* Precio mínimo/máximo.
+* Disponibilidad.
+* Ordenar por precio.
+
+### Alquiler
+
+Al presionar "Alquilar", mostrar un proceso de 3 pasos:
+
+**1. Fecha y hora**
+
+* Fecha/hora de inicio.
+* Fecha/hora de finalización.
+* Calendario y selector de hora.
+* Calcular automáticamente las horas alquiladas.
+
+**2. Datos del cliente**
+
+* Nombre.
+* Apellido.
+* Correo.
+* Celular.
+* Dirección.
+* Documento.
+
+**3. Pago y resumen**
+
+* Método de pago: Tarjeta, PSE, Nequi o Bancolombia.
+* Mostrar:
+
+  * Precio por hora.
+  * Número de horas.
+  * Subtotal.
+  * IVA 19%.
+  * **Total final.**
+
+Ejemplo:
+Inicio: 28/08/2026 5:00 PM
+Finalización: 10/09/2026 2:00 PM.
+
+El precio debe actualizarse automáticamente según las horas seleccionadas.
+
+Al confirmar, mostrar una pantalla de **"Alquiler confirmado"** con número de reserva, máquina, fechas, duración y total.
+
+### Importante
+
+Haz que todo sea **funcional en frontend**, usando datos de prueba. Los filtros, calendario, horas y cálculo de subtotal + IVA + total deben funcionar.
+
+Deja la estructura preparada para conectar posteriormente un backend/API y una base de datos.
+
+No agregues funciones innecesarias. Prioriza una interfaz sencilla, rápida y profesional.
